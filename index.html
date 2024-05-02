@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		Cross-Origin-Embedder-Policy: require-corp
-		Cross-Origin-Opener-Policy: same-origin
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no">
 		<title>Test</title>
@@ -111,10 +109,10 @@ body {
 	visibility: visible;
 }
 		</style>
-		<link id='-gd-engine-icon' rel='icon' type='image/png' href='Test123.icon.png' />
-<link rel='apple-touch-icon' href='Test123.apple-touch-icon.png'/>
-<link rel='manifest' href='Test123.manifest.json'>
-
+		<link id='-gd-engine-icon' rel='icon' type='image/png' href='index.icon.png' />
+<link rel='apple-touch-icon' href='index.apple-touch-icon.png'/>
+<link rel='manifest' href='index.manifest.json'>
+<script src="coi-serviceworker.js"></script>
 	</head>
 	<body>
 		<canvas id="canvas">
@@ -138,9 +136,9 @@ body {
 			<div id="status-notice" class="godot" style="display: none;"></div>
 		</div>
 
-		<script src="Test123.js"></script>
+		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"executable":"Test123","experimentalVK":false,"fileSizes":{"Test123.pck":1127776,"Test123.wasm":49282035},"focusCanvas":true,"gdextensionLibs":[],"serviceWorker":"Test123.service.worker.js"};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":1268960,"index.wasm":49282035},"focusCanvas":true,"gdextensionLibs":[],"serviceWorker":"index.service.worker.js"};
 const engine = new Engine(GODOT_CONFIG);
 
 (function () {
